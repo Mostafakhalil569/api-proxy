@@ -7,7 +7,7 @@ const app = express();
 // Enable CORS for both local development and deployed S3 application
 
 const corsOptions = {
-  origin: 'https://your-angular-app.render.com',
+  origin: 'https://olaops-frontend.onrender.com',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,

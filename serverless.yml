@@ -1,0 +1,15 @@
+service:
+  name: my-serverless-proxy
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-central-1  # Frankfurt (eu-central-1) region
+
+functions:
+  app:
+    handler: app.handler
+    events:
+      - http:
+          path: /
+          method: any
